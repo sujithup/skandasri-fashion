@@ -4,15 +4,14 @@ import { Dialog, Transition } from '@headlessui/react';
 import Link from 'next/link';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { Fragment, useEffect, useState } from 'react';
-
-import { Spin as Hamburger } from 'hamburger-react';
-import { navLinks } from '@/app/utils/constants';
+import { Spin as Hamburger } from 'hamburger-react';  // Ensure 'Spin' is the correct import if using 'Hamburger'
+import { navLinks } from '@/app/utils/constants';  // Check path correctness // Ensure file name and import are correct
 import Search from './searchIcon';
 
 export default function MobileMenu() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
+
   const closeMobileMenu = () => setIsOpen(false);
 
   useEffect(() => {
@@ -23,11 +22,7 @@ export default function MobileMenu() {
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [isOpen]);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname, searchParams]);
+  }, []);
 
   return (
     <>
