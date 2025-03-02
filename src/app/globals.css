@@ -1,21 +1,206 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lora&family=Quicksand:wght@400;500;600;700&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.btn {
+    position: relative;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #D6BCFA; /* Assumed lightPurple */
+    padding: 16px 32px;
+    font-weight: bold;
+    color: #5A4E7C; /* Assumed darkPurple */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .btn::after {
+    content: '>';
+    position: absolute;
+    right: 20px;
+    top: calc(50% + 2px);
+    font-family: 'swiper-icons'; /* Assumed */
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+  }
+  .btn:hover {
+    border-color: #D6BCFA; /* Assumed lightPurple */
+    background-color: #9F7AEA; /* Assumed purple */
+    padding-left: 16px;
+    padding-right: 48px;
+    color: white;
+  }
+  .btn:hover::after {
+    opacity: 1;
+  }
+  
+  .btn-dark {
+    position: relative;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #9F7AEA; /* Assumed purple */
+    padding: 16px 32px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+  }
+  .btn-dark::after {
+    content: 'next';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-family: 'swiper-icons'; /* Assumed */
+    font-size: 18px;
+    color: white;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+  }
+  .btn-dark:hover {
+    border-color: white;
+    background-color: #4A346F; /* Assumed darkPurple */
+    padding-left: 16px;
+    padding-right: 48px;
+  }
+  .btn-dark:hover::after {
+    opacity: 1;
+  }
+  
+  .btn-very-dark {
+    position: relative;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #4A346F; /* Assumed darkPurple */
+    padding: 16px 32px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+  }
+  .btn-very-dark::after {
+    content: 'next';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-family: 'swiper-icons'; /* Assumed */
+    font-size: 18px;
+    color: white;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+  }
+  .btn-very-dark:hover {
+    border-color: white;
+    background-color: #9F7AEA; /* Assumed purple */
+    padding-left: 16px;
+    padding-right: 48px;
+  }
+  .btn-very-dark:hover::after {
+    opacity: 1;
+  }
+  
+  .btn-cart {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #9F7AEA; /* Assumed purple */
+    padding: 16px 32px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s;
+  }
+  .btn-cart::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 32px;
+    color: white;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+  }
+  .btn-cart:hover {
+    border-color: white;
+    background-color: #4A346F; /* Assumed darkPurple */
+    padding-left: 16px;
+    padding-right: 48px;
+    color: white;
+  }
+  .btn-cart:hover::after {
+    opacity: 1;
+  }
+  
+  .btn-cart-disabled {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    border: transparent;
+    background-color: #9F7AEA; /* Assumed purple */
+    padding: 16px 32px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  }
+  
+  .hover-line {
+    position: relative;
+    transition: all 0.3s;
+  }
+  .hover-line::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 0;
+    background-color: #9F7AEA; /* Assumed purple */
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+  }
+  .hover-line:hover {
+    color: #9F7AEA; /* Assumed purple */
+  }
+  .hover-line:hover::before {
+    width: 100%;
+    opacity: 1;
+  }
+  
+  .header-link {
+    position: relative;
+    height: 100%;
+  }
+  .header-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 4px;
+    width: 0;
+    background-color: #9F7AEA; /* Assumed purple */
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateX(-50%);
+    display: none;
+  }
+  .header-link:hover {
+    color: #9F7AEA; /* Assumed purple */
+  }
+  .header-link:hover::before {
+    width: 100%;
+    opacity: 1;
+    display: block;
+  }
+  @media (min-width: 768px) {
+    .header-link::before {
+      display: block;
+    }
+  }
+  
