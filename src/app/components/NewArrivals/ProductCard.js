@@ -15,7 +15,7 @@ const ProductCard = ({ photo, index }) => {
   const message = encodeURIComponent(
     "Hi, I'm interested in this product. Could you tell me more about it?"
   );
-  const whatsappLink = `https://api.whatsapp.com/send?phone=8073212505&text=${message}`;
+  const whatsappLink = `https://api.whatsapp.com/send?phone=+918073212505&text=${message}`;
   return (
     <section id="newArrivals" >
     <LazyMotion features={domAnimation} key={index}>
