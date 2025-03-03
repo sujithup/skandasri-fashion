@@ -1,15 +1,15 @@
 export const navLinks = [
+//   {
+//     title: "All Products",
+//     path: "#home",
+//   },
+//   {
+//     title: "Men",
+//     path: "#features",
+//   },
   {
-    title: "All Products",
-    path: "#home",
-  },
-  {
-    title: "Men",
-    path: "#features",
-  },
-  {
-    title: "Women",
-    path: "#photos",
+    title: "New Arrivals",
+    path: "#newArrivals",
   },
 ];
 
@@ -30,28 +30,16 @@ export const extraLinks = [
 
 export const photos = [
   {
-    title: "Fringe Knit",
-    src: "/images/fringe.jpg",
+    title: "Kurthas",
+    src: "/images/image1.webp",
   },
   {
-    title: "Shaggy Tweed Jacket",
-    src: "/images/shaggySweater.jpg",
+    title: "Banarasi Saree",
+    src: "/images/image2.webp",
   },
   {
-    title: "Collarless Jacket",
-    src: "/images/pocketJacket.jpg",
-  },
-  {
-    title: "Phoebe Dress",
-    src: "/images/phoebeDress.jpg",
-  },
-  {
-    title: "Emilie Pants",
-    src: "/images/emilyPants.jpg",
-  },
-  {
-    title: "Cozy Jacket",
-    src: "/images/cozyJacket.jpg",
+    title: "Cotton Saree",
+    src: "/images/image3.webp",
   },
 ];
 

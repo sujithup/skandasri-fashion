@@ -12,10 +12,15 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import { photos } from "@/app/utils/constants";
 
 const ProductCard = ({ photo, index }) => {
+  const message = encodeURIComponent(
+    "Hi, I'm interested in this product. Could you tell me more about it?"
+  );
+  const whatsappLink = `https://api.whatsapp.com/send?phone=8073212505&text=${message}`;
   return (
+    <section id="newArrivals" >
     <LazyMotion features={domAnimation} key={index}>
       <m.article
-        className="relative flex w-[180px] flex-col items-center justify-center gap-[10px] sm:w-[280px]"
+        className="relative flex w-[180px] m-3 flex-col items-center justify-center gap-[10px] sm:w-[280px] lg:m-0"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeOut", duration: 0.5, delay: 0 }}
@@ -35,8 +40,12 @@ const ProductCard = ({ photo, index }) => {
         <h3 className="text-center font-quicksand text-[clamp(20px,8px_+_2vw,22px)] font-bold text-darkPurple transition-all duration-300 hover:text-purple">
           {photo.title}
         </h3>
+        <a href={whatsappLink} className="btn">
+          Contact Now
+        </a>
       </m.article>
     </LazyMotion>
+    </section>
   );
 };
 

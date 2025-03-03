@@ -8,9 +8,9 @@ const NewArrivals = async () => {
           New Arrivals
         </h2>
         <ProductList />
-        <a href="/search/all-products" className="btn text-[clamp(18px,10px_+_2vw,22px)]">
+        {/* <a href="/search/all-products" className="btn text-[clamp(18px,10px_+_2vw,22px)]">
           View More
-        </a>
+        </a> */}
       </div>
     </section>
   );
