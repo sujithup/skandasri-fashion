@@ -4,22 +4,16 @@ import Discounts from "./components/Discount/discount";
 import NewArrivals from "./components/NewArrivals/NewArrivals";
 import Footbar from "./components/Footbar/footbar";
 import CopyRight from "./components/Footbar/copyright";
-import Head from "next/head";
 
 export default function Home() {
   return (
-    <main>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div>
-        <Header />
-        <Hero />
-        <Discounts />
-        <NewArrivals />
-        <Footbar />
-        <CopyRight />
-      </div>
-    </main>
+    <>
+      <Header />
+      <Hero />
+      <Discounts />
+      <NewArrivals />
+      <Footbar />
+      <CopyRight />
+    </>
   );
 }

@@ -44,24 +44,24 @@ export const photos = [
 ];
 
 export const socialMediaItems = [
-    {
-      "title": "X",
-      "url": "https://twitter.com/rashidshamloo",
-      "image": "/images/social-media/x.png"
-    },
-    {
-      "title": "Facebook",
-      "url": "https://www.linkedin.com/in/rashid-shamloo/",
-      "image": "/images/social-media/facebook.png"
-    },
+    // {
+    //   "title": "X",
+    //   "url": "https://twitter.com/rashidshamloo",
+    //   "image": "/images/social-media/x.png"
+    // },
+    // {
+    //   "title": "Facebook",
+    //   "url": "https://www.linkedin.com/in/rashid-shamloo/",
+    //   "image": "/images/social-media/facebook.png"
+    // },
     {
       "title": "Instagram",
-      "url": "https://www.rashidshamloo.com/",
+      "url": "https://www.instagram.com/skanda_shree_fashions",
       "image": "/images/social-media/instagram.png"
     },
-    {
-      "title": "Youtube",
-      "url": "https://www.rashidshamloo.ir/",
-      "image": "/images/social-media/youtube.png"
-    },
+    // {
+    //   "title": "Youtube",
+    //   "url": "https://www.rashidshamloo.ir/",
+    //   "image": "/images/social-media/youtube.png"
+    // },
   ];

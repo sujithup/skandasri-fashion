@@ -4,10 +4,15 @@ import React from "react";
 import Menu from "./menu";
 import Search from "./searchIcon";
 import MobileMenu from "./mobileMenu";
+import Head from "next/head";
 
 function Header() {
   return (
+    
     <header className="flex w-full items-center justify-center border-b border-purple bg-white/80 px-[8px] py-[4px] md:h-[80px] md:py-0 xl:px-[48px]">
+      <Head>
+      <link   rel="icon" type="image/x-icon" href="/favicon.ico" />
+      </Head>
       <h1 className="sr-only">Skandashree Fashions</h1>
       <nav className="flex h-full w-full max-w-full items-center justify-between md:w-[1440px]">
         <h2 className="sr-only">Main Navigation Menu</h2>
