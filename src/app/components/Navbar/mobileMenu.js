@@ -31,6 +31,7 @@ export default function MobileMenu() {
           toggled={isOpen}
           onToggle={() => setIsOpen(!isOpen)}
           direction='right'
+          color='white'
           label="Open mobile menu"
           size={30}
         />
