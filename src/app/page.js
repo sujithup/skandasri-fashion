@@ -8,16 +8,18 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <Hero />
-      <Discounts />
-      <NewArrivals />
-      <Footbar />
-      <CopyRight />
-    </>
+      <div>
+        <Header />
+        <Hero />
+        <Discounts />
+        <NewArrivals />
+        <Footbar />
+        <CopyRight />
+      </div>
+    </main>
   );
 }

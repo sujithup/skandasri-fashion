@@ -37,7 +37,7 @@ const SocialMedia = () => {
           <div
             className="mb-4 flex flex-col gap-4 text-purple-950 md:mb-0 md:flex-row"
           >
-            customer.care@skandasri.com
+            customer.care@Skandashree.com
           </div>
         </div>
       </div>

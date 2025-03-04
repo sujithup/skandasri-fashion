@@ -8,7 +8,7 @@ import MobileMenu from "./mobileMenu";
 function Header() {
   return (
     <header className="flex w-full items-center justify-center border-b border-purple bg-white/80 px-[8px] py-[4px] md:h-[80px] md:py-0 xl:px-[48px]">
-      <h1 className="sr-only">Skandasri Fashions</h1>
+      <h1 className="sr-only">Skandashree Fashions</h1>
       <nav className="flex h-full w-full max-w-full items-center justify-between md:w-[1440px]">
         <h2 className="sr-only">Main Navigation Menu</h2>
         <div className="flex h-full w-full items-center justify-between">
@@ -17,7 +17,13 @@ function Header() {
             title="Home"
             className="header-link flex h-full items-center justify-center"
           >
-            <h3 className="font-bold text-xl ml-2">Skandasri Fashions</h3>
+            <Image
+            alt="logo"
+            src="/images/skandashree_logo.jpg"
+            width="200"
+            height="100"
+            />
+            {/* <h3 className="font-bold text-xl ml-2">Skandashree Fashions</h3> */}
           </Link>
           <Menu />
           <div className="md:hidden">
