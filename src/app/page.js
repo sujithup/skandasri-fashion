@@ -4,6 +4,8 @@ import Discounts from "./components/Discount/discount";
 import NewArrivals from "./components/NewArrivals/NewArrivals";
 import Footbar from "./components/Footbar/footbar";
 import CopyRight from "./components/Footbar/copyright";
+import Categories from "./components/Footbar/categories";
+import WomenCategories from "./components/Categories/womenCategories";
 
 export default function Home() {
   return (
@@ -12,6 +14,7 @@ export default function Home() {
       <Hero />
       <Discounts />
       <NewArrivals />
+      <WomenCategories/>
       <Footbar />
       <CopyRight />
     </>
