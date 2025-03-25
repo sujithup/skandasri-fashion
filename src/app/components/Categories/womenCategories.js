@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function WomenCategories() {
   return (
-    <div style={{ position: 'relative', width: '100%', height: '736px' }}>
+    <div className="relative w-full h-[736px]">
       <Image
         alt="this is a header"
         src="/images/categoriesBG.jpeg"
@@ -14,43 +14,18 @@ function WomenCategories() {
       />
 
       {/* Black Overlay */}
-      <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.4)', 
-        }}
-      />
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-black bg-opacity-40" />
 
-      <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          padding: '1rem 2rem',
-          color: '#fff',  
-          textAlign: 'center',
-          backgroundColor: "crimson"
-        }}
-      >
-        <div style={{ marginBottom: '2rem' }}>
-        Discover elegance redefined with our latest Women's Kurtha Collection, designed exclusively to celebrate your individuality. Each piece is crafted with precision, blending traditional styles with contemporary fashion to create perfect outfits for any occasion. Immerse yourself in a range of vibrant colors, exquisite patterns, and luxurious fabrics that promise both comfort and style.
-        </div>
+      {/* Text and Button Container */}
+      <div className="flex flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-10 text-center text-white bg-crimson w-11/12 sm:w-2/3 md:w-1/2 bg-red-600">
+        <p className="mb-4">
+          Discover elegance redefined with our latest Women's Kurtha Collection, designed exclusively to celebrate your individuality.
+        </p>
         
-        <div className="btn" style={{width: "60%"}}
-        >
-          <Link href="/women">
-          Explore the Collection
-          </Link>
-        </div>
+        <Link href="/women"  className="btn max-w-52">
         
-        
+            View All
+        </Link>
       </div>
     </div>
   );
